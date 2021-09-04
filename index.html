@@ -12,32 +12,61 @@
             margin: 1rem;
             height: 5rem;
             padding: 1px;
+            border-radius: 5px;
         }
 
         #output{
             width: 60rem;
             display: block;
-            margin: 1rem;
+            /* margin: 1rem; */
             height: 5rem;
             padding: 1px;
             border:1px solid black;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .main{
+            margin: auto;
+            /* padding-bottom: 5rem; */
+            text-align: center;
+            
+
+        }
+
+        .air{
+            margin-top: 25px;
+        }
+
+        #btn-translate{
+            color: black;
+            background-color: skyblue;
+            border-radius: 3px;
+            padding: 14px 40px;
         }
     </style>
     
 </head>
 
 <body>
-    <p>Welcome to my page </p>
 
-    <textarea id="txt-input" placeholder="enter the text to convert it to the banana language">
-    </textarea>
+    <div class="main">
+        <p>Minion Language Translator</p>
 
-    <button id="btn-translate">Translate</button>
+        <textarea id="txt-input" class="main air" placeholder="enter the text to convert it to the minion language">
+        </textarea>
+
+        <button id="btn-translate" class="air">Translate</button>
+      
+    
 
     <!-- output -->
-    <div>Out put will come here </div>
-    <div id="output"></div>
 
+            <div class="air">Output will come here </div>
+            <div class="air">
+                <div id="output" class="main air"></div>
+            </div>
+    </div>
 
     <script src="/app.js" type="text/javascript"></script>
 </body>
