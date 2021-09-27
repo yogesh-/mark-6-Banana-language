@@ -5,7 +5,7 @@ var divBox = document.querySelector("#output");
 // var liveUrl = "	https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 var liveUrl = "https://api.funtranslations.com/translate/minion.json"
 
-function constructUrl (text){
+function constructUrl(text){
     return liveUrl + "?" + "text=" + text
 }
 
